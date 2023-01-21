@@ -21,6 +21,12 @@ $bookToEdit = $obj->show($_GET['id']);
         </div>
     </div>
     <div class="mb-3 row">
+        <label for="description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" id="description" name="description" maxlength="1500"><?= $bookToEdit['description'] ?></textarea>
+        </div>
+    </div>
+    <div class="mb-3 row">
         <label for="author" class="col-sm-2 col-form-label">Author</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" id="author" name="author" value="<?= $bookToEdit["author"] ?>">
@@ -29,13 +35,13 @@ $bookToEdit = $obj->show($_GET['id']);
     <div class="mb-3 row">
         <label for="isbn" class="col-sm-2 col-form-label">ISBN</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="isbn" name="isbn" value="<?= $bookToEdit["isbn"] ?>">
+            <input type="text" class="form-control" id="isbn" name="isbn" maxlength="19" value="<?= $bookToEdit["isbn"] ?>">
         </div>
     </div>
     <div class="mb-3 row">
         <label for="year_edition" class="col-sm-2 col-form-label">Year</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="year_edition" name="year_edition" value="<?= $bookToEdit["year_edition"] ?>">
+            <input type="text" class="form-control" id="year_edition" name="year_edition" maxlength="4" value="<?= $bookToEdit["year_edition"] ?>">
         </div>
     </div>
     <div>

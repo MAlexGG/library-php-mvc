@@ -15,16 +15,17 @@ $book = $obj->show($_GET['id']);
 
 
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 50rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title"><?= $book["title"] ?></h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text"><?= $book["description"] ?></p>
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">Author: <?= $book["author"] ?></li>
-        <li class="list-group-item">Year: <?= $book["year_edition"] ?></li>
         <li class="list-group-item">ISBN: <?= $book["isbn"] ?></li>
+        <li class="list-group-item">Year: <?= $book["year_edition"] ?></li>
+
     </ul>
     <div class="card-body">
         <a href="edit.php?id=<?= $book["id"] ?>" class="btn btn-dark">Edit</a>
