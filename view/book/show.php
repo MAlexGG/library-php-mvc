@@ -28,7 +28,7 @@ $book = $obj->show($_GET['id']);
     </ul>
     <div class="card-body">
         <a href="edit.php?id=<?= $book["id"] ?>" class="btn btn-dark">Edit</a>
-        <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</a>
+        <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</a>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -41,8 +41,8 @@ $book = $obj->show($_GET['id']);
                         You will delete the book <strong><?= $book["title"] ?></strong> and you will not be able to undo this operation
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <a href="delete.php?id=<?= $book["id"] ?> " class="btn btn-warning">Delete</a>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                        <a href="delete.php?id=<?= $book["id"] ?> " class="btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>
