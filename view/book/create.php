@@ -1,5 +1,5 @@
 <?php
-require_once("C://xampp/htdocs/library-php-mvc/view/head/head.php");
+require_once("C://xampp/htdocs/library-php-mvc/view/head/header.php");
 ?>
 
 <form action="store.php" method="POST">

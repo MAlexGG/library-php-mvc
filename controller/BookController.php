@@ -15,4 +15,9 @@ class BookController
         $id = $this->model->insert($title, $author, $isbn, $year_edition);
         return ($id != false) ? header("Location:show.php?id=" . $id) : ("Location:create.php");
     }
+
+    public function show($id)
+    {
+        return ($this->model->show($id) != false ? $this->model->show($id) : header("Location:index.php"));
+    }
 }

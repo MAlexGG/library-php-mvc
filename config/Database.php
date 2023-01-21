@@ -7,7 +7,7 @@ class Database
     private $user = "root";
     private $password = "";
 
-    public function conection()
+    public function connection()
     {
         try {
             $pdo = new PDO("mysql:host=" . $this->host . "; dbName=" . $this->dbname, $this->user, $this->password);
