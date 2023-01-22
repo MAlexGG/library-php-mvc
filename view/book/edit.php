@@ -6,7 +6,7 @@ require_once("c://xampp/htdocs/library-php-mvc/controller/BookController.php");
 $obj = new BookController();
 $bookToEdit = $obj->show($_GET['id']);
 ?>
-<form action="update.php" method="POST" autocomplete="off">
+<form action="update.php" method="POST" enctype="multipart/form-data">
     <h2>Edit Book</h2>
     <div class="mb-3 row">
         <label for="id" class="col-sm-2 col-form-label">Id</label>

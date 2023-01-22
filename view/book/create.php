@@ -2,7 +2,7 @@
 require_once("C://xampp/htdocs/library-php-mvc/view/head/header.php");
 ?>
 
-<form action="store.php" method="POST" enctype="multipart/form-data">
+<form class="p-5" action="store.php" method="POST" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="title" class="form-label">Title</label>
         <input type="text" required name="title" class="form-control" id="title" aria-describedby="title">
@@ -25,13 +25,13 @@ require_once("C://xampp/htdocs/library-php-mvc/view/head/header.php");
     </div>
 
     <div class="mb-3">
-        <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+        <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
         <label for="image_url" class="form-label">Image</label>
         <input type="file" required name="image_url" class="form-control" id="image_url">
     </div>
 
-    <button type="submit" class="btn btn-dark">Guardar</button>
-    <a class="btn btn-warning" href="../../index.php">Cancelar</a>
+    <button class="btn btn-dark mt-3" type="submit">Create</button>
+    <a class="btn btn-warning mt-3" href="../../index.php">Cancel</a>
 </form>
 
 
