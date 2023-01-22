@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+.ct-body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ct-home {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-home {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.txt-title {
+    position: absolute;
+    top: 9%;
+    left: 13%;
+    font-family: 'Yellowtail', cursive;
+    font-size: 4rem;
+}
