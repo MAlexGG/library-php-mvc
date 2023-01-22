@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 .ct-index {
     background-image: url("../img/shelve.jpg");
-    background-repeat: repeat-y;
-    background-size: cover;
-    height: 100vh;
+    background-repeat: repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 9%;
 }
 
 .ct-books {
