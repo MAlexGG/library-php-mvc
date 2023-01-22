@@ -15,7 +15,7 @@ $books = $obj->getBooks();
         <?php foreach ($books as $book) : ?>
             <div class="col">
                 <div class="card" style="width: 25rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="data:image/jpg; base64,<?= base64_encode($book["image_url"]) ?>" class="card-img-top" alt="<?= $book["title"] ?>">
                     <div class="card-body">
                         <h5 class="card-title"><?= $book["title"] ?></h5>
                     </div>
@@ -26,10 +26,10 @@ $books = $obj->getBooks();
                     </ul>
                     <div class="card-body">
                         <a href="show.php?id=<?= $book["id"] ?>" class="btn btn-dark">Read more...</a>
-                        <a href="edit.php?id= <?= $book["id"] ?>" class="btn btn-warning">Edit</a>
-                        <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</a>
+                        <a href="edit.php?id=<?= $book["id"] ?>" class="btn btn-warning">Edit</a>
+                        <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal-<?= $book["id"] ?>">Delete</a>
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal-<?= $book["id"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -55,12 +55,6 @@ $books = $obj->getBooks();
 <?php else : ?>
     <h3 class="text-center">There is not books</h3>
 <?php endif; ?>
-
-
-
-
-
-
 
 <?php
 require_once("c://xampp/htdocs/library-php-mvc/view/head/footer.php");

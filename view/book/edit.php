@@ -44,6 +44,12 @@ $bookToEdit = $obj->show($_GET['id']);
             <input type="text" class="form-control" id="year_edition" name="year_edition" maxlength="4" value="<?= $bookToEdit["year_edition"] ?>">
         </div>
     </div>
+    <div class="mb-3 row">
+        <label for="image_url" class="col-sm-2 col-form-label">Image</label>
+        <div class="col-sm-10">
+            <input type="file" class="form-control" id="image_url" name="image_url">
+        </div>
+    </div>
     <div>
         <input type="submit" class="btn btn-warning" value="Update">
         <a class="btn btn-dark" href="show.php?=id<?= $bookToEdit["id"] ?>">Cancel</a>

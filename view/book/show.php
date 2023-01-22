@@ -16,7 +16,7 @@ $book = $obj->show($_GET['id']);
 
 </div>
 <div class="card" style="width: 50rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="data:image/jpg; base64,<?= base64_encode($book['image_url']) ?>" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title"><?= $book["title"] ?></h5>
         <p class="card-text"><?= $book["description"] ?></p>
