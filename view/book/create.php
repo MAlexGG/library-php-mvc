@@ -3,6 +3,7 @@ require_once("C://xampp/htdocs/library-php-mvc/view/head/header.php");
 ?>
 
 <form class="p-5" action="store.php" method="POST" enctype="multipart/form-data">
+    <h2 class="text-warning">Create Book</h2>
     <div class="mb-3">
         <label for="title" class="form-label">Title</label>
         <input type="text" required name="title" class="form-control" id="title" aria-describedby="title">
