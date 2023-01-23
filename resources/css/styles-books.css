@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+.ct-index {
+    background-image: url("../img/shelve.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 9%;
+}
+
+.ct-books {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.ct-book {
+    width: 280px;
+    height: 650px;
+    margin: 2%;
+    filter: drop-shadow(0 2mm 2mm rgba(0, 0, 0, 0.46));
+}
+
+.ct-book-img {
+    width: 280px;
+    height: 410px;
+    overflow: hidden;
+}
+
+.book-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ct-book-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3%;
+    height: 240px;
+    background-color: #ffffff6e;
+}
+
+.ct-book-txt ul {
+    list-style-type: none;
+}
+
+.txt-books {
+    font-family: 'Yellowtail', cursive;
+    font-size: 4rem;
+}
+
+.ct-book-bt {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .ct-books {
+        position: relative;
+    }
+    .txt-books {
+        position: absolute;
+        top: 25%;
+    }
+}

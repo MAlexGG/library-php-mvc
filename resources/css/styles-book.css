@@ -1,72 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-.ct-index {
-    background-image: url("../img/shelve.jpg");
-    background-repeat: repeat;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 9%;
-}
-
-.ct-books {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+.ct-show {
+    background-image: url("../img/table_wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
     width: 100vw;
 }
 
-.ct-book {
-    width: 280px;
-    height: 650px;
-    margin: 2%;
-    filter: drop-shadow(0 2mm 2mm rgba(0, 0, 0, 0.46));
+.ct-show-book {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 92vh;
 }
 
-.ct-book-img {
-    width: 280px;
-    height: 410px;
+.ct-show-img {
+    width: 350px;
+    height: 600px;
     overflow: hidden;
 }
 
-.book-img {
+.ct-show-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
-.ct-book-txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 3%;
-    height: 240px;
-    background-color: #ffffff6e;
+.ct-show-txt {
+    width: 55vw;
+    color: white;
+    padding: 5%;
+    background-color: #00000085;
+    margin: 0% 0% 0% 5%;
 }
 
-.ct-book-txt ul {
-    list-style-type: none;
+.ct-show-txt h5 {
+    font-size: 2rem;
 }
 
-.txt-books {
-    font-family: 'Yellowtail', cursive;
-    font-size: 4rem;
-}
-
-.ct-book-bt {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-}
-
-@media (max-width: 576px) {
-    .ct-books {
-        position: relative;
+@media (max-width: 900px) {
+    .ct-show {
+        height: auto;
     }
-    .txt-books {
-        position: absolute;
-        top: 25%;
+    .ct-show-book {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .ct-show-txt {
+        width: 90vw;
+        margin: 0% 0% 0% 0%;
     }
 }
