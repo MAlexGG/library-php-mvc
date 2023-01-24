@@ -1,4 +1,4 @@
-# 🪕 Library
+# 📚 Library
 
 ## Table of Contents
 
