@@ -10,17 +10,14 @@
 
 ## General Info
 
-This is an educational exercise to practice object-oriented programming in vanilla PHP. Study of the 4 main principles, abstraction, encapsulation, inheritance and polymorphism by inheritance and with interfaces through creating musical instruments. Tested with PHPUnit.
+This is a simple CRUD project whose objective is to show books, it's developed in vanilla PHP, with an MVC architecture and with object-oriented programming, bootstrap is partially used for the styles and it's responsive. It has a MySQL database.
 
 ## Technologies
 
-It was developed with php, for testing PHPUnit.
+It was developed with php, bootstrap.
 
 ## Installation
 
 - Required PHP v. 8.0.10
-- Required Composer v. 2.1.6
-- Required PHPUnit v. 9.5
 - git clone <repository>
-- composer i
 - xampp
