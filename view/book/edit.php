@@ -5,6 +5,8 @@ require_once("c://xampp/htdocs/library-php-mvc/controller/BookController.php");
 
 $obj = new BookController();
 $bookToEdit = $obj->show($_GET['id']);
+
+
 ?>
 <form class="p-5" action="update.php" method="POST" enctype="multipart/form-data">
     <h2 class="text-warning">Edit Book</h2>
@@ -49,12 +51,14 @@ $bookToEdit = $obj->show($_GET['id']);
         <div class="col-sm-10">
             <input type="file" class="form-control" id="image_url" name="image_url">
         </div>
+        <img src="data:image/jpg; base64,<?= base64_encode($bookToEdit['image_url']) ?>" class="w-25 m-5" alt="<?= $bookToEdit["title"] ?>">
     </div>
     <div>
         <input type="submit" class="btn btn-warning" value="Update">
-        <a class="btn btn-dark" href="show.php?=id<?= $bookToEdit["id"] ?>">Cancel</a>
+        <a class="btn btn-dark" href="show.php?id=<?= $bookToEdit["id"] ?>">Cancel</a>
     </div>
 </form>
+
 <?php
 require_once("c://xampp/htdocs/library-php-mvc/view/head/footer.php");
 ?>

@@ -32,7 +32,7 @@ require_once("C://xampp/htdocs/library-php-mvc/view/head/header.php");
     </div>
 
     <button class="btn btn-dark mt-3" type="submit">Create</button>
-    <a class="btn btn-warning mt-3" href="../../index.php">Cancel</a>
+    <a class="btn btn-warning mt-3" href="../book/index.php">Cancel</a>
 </form>
 
 
