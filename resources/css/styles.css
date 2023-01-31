@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import './styles-book.css';
+@import './styles-books.css';
 .ct-body {
     width: 100vw;
     height: 100vh;
