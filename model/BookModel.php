@@ -55,4 +55,10 @@ class BookModel
         $statement->bindParam(":id", $id);
         return ($statement->execute()) ? true : false;
     }
+
+    public function search($search)
+    {
+        $statement = $this->pdo->prepare("SELECT * FROM library_php_mvc.books WHERE title LIKE '%$search%' OR author LIKE '%$search%'");
+        return ($statement->execute()) ? $statement->fetchAll() : false;
+    }
 }

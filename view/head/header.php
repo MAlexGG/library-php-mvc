@@ -35,6 +35,10 @@
                     </ul>
                 </div>
             </div>
+            <form class="d-flex m-2" action="../book/search.php" method="POST">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
         </nav>
     </div>
     <div class="container-fluid p-0">
