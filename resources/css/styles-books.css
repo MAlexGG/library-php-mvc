@@ -15,6 +15,15 @@
     width: 100vw;
 }
 
+.ct-no-books {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
 .ct-book {
     width: 280px;
     height: 650px;

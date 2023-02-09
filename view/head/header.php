@@ -14,7 +14,7 @@
 </head>
 
 <body class="container-fluid p-0 ct-body">
-    <div class=" container-fluid bg-dark p-2">
+    <div class="container-fluid bg-dark p-0">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/library-php-mvc/index.php">Home</a>
@@ -35,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-            <form class="d-flex m-2" action="../book/search.php" method="POST">
+            <form class="d-flex me-4" action="../book/search.php" method="POST">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
                 <button class="btn btn-outline-warning" type="submit">Search</button>
             </form>

@@ -52,7 +52,10 @@ $books = $obj->search($_POST['search']);
         </div>
 
     <?php else : ?>
-        <h3 class="text-center txt-books text-warning p-4">There is not books</h3>
+        <div class="ct-no-books">
+            <h3 class="text-center txt-books text-warning p-5 ct-no-books">There are no books matching your search</h3>
+        </div>
+
 
 </div>
 <?php endif; ?>
