@@ -25,7 +25,7 @@ $bookToEdit = $obj->show($_GET['id']);
     <div class="mb-3 row">
         <label for="description" class="col-sm-2 col-form-label">Description</label>
         <div class="col-sm-10">
-            <textarea class="form-control" id="description" name="description" maxlength="1500"><?= $bookToEdit['description'] ?></textarea>
+            <textarea class="form-control" id="description" name="description" maxlength="800"><?= $bookToEdit['description'] ?></textarea>
         </div>
     </div>
     <div class="mb-3 row">

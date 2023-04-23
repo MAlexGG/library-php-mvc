@@ -10,7 +10,7 @@ require_once("C://xampp/htdocs/library-php-mvc/view/head/header.php");
     </div>
     <div class="mb-3">
         <label for="description" class="form-label">Description</label>
-        <textarea class="form-control" name="description" placeholder="Add a description, max. 1500 characters..." id="description" maxlength="1500"></textarea>
+        <textarea class="form-control" name="description" placeholder="Add a description, max. 800 characters..." id="description" maxlength="800"></textarea>
     </div>
     <div class="mb-3">
         <label for="author" class="form-label">Author</label>

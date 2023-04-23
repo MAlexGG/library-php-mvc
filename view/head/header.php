@@ -35,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-            <form class="d-flex me-4" action="../book/search.php" method="POST">
+            <form class="d-flex me-4" action="/library-php-mvc/view/book/search.php" method="POST">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
                 <button class="btn btn-outline-warning" type="submit">Search</button>
             </form>

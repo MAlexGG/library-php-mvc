@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 92vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -41,9 +41,6 @@
 }
 
 @media (max-width: 900px) {
-    .ct-show {
-        height: auto;
-    }
     .ct-show-book {
         flex-direction: column;
         justify-content: flex-start;
